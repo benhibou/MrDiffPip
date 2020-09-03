@@ -1,0 +1,7 @@
+./rotBvec.py -basedir /raid1/bboulat/FKBP_DICOMS/20180314_094350_FKBP51_1_1/11/pdata/1/processed/ -filename deux.nii -transpose y -form q -filevec /raid1/bboulat/FKBP_4/20180323_100649_507_1_2/9/pdata/1/b_table.txt -filout ./monvec
+
+ ./rotBvec.py -basedir /raid1/bboulat/FKBP_DICOMS/20180315_152551_FKBP51_1_5/7/pdata/1/processed/ -filename 4D.nii -transpose n -form s -filevec monvec -filout ./monvec3
+
+~/myProg/myPython/DiffValForDipy_Val1st.py -basedir . -filename monvec3
+
+cp monvec3 /raid1/bboulat/FKBP_DICOMS/20180314_094350_FKBP51_1_1/11/pdata/1/processed/monvec3.txt
