@@ -6,8 +6,6 @@ import time
 import string
 import re
 import numpy as np
-#
-# The BeBo Company, 2018
 
 
 if ( len ( sys.argv ) == 2 ) :
