@@ -11,9 +11,12 @@
 # comes under "filename". 
 # "basedir_f" is the directory of the study
 # under which the data for all the animals
-# are stored. "filestring" is the name of the 
+# are stored, "exp#" is the experiment number
+# for the study. "filestring" is the name of the 
 # file that contains the diffusion parameters
-# to be collected.
+# to be collected (in Bruker Paravision, the
+# method file). "nb0" is the number of B_0 experiment
+# recorded (no diffusion gradient).
 
 import sys
 import os
@@ -86,7 +89,7 @@ for line in f:
        s_1 = "-basedir " + s_1 + columns[0] + "/" + columns[exn] + "/ "
        print ( s_2 )
        if ( os.path.isfile (  s_2 ) ):
-          s_1 = '/home/spectro/myProg/myPython/Read_Diff_Val.py ' + s_1 + \
+          s_1 = 'Read_Diff_Val.py ' + s_1 + \
                 "-filename " + file_string + " -nb0 " + nb0
           #s_1 = s_1 + " " + base_dir_t + str ( m ) + "_" + file_string
           print ( s_1 )
