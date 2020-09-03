@@ -126,7 +126,4 @@ while i < len ( array_vec ):
       i = i + 3
       j = j + 1
       MMF.write ( s )
-#ModMethFil = "/home/nmrsu/someprog/rare_adj/scripts/mytry2"
-#MMF = open (ModMethFil, 'w' )
-#MMF.writelines ( contents )
-#MMF.close ( )
+
